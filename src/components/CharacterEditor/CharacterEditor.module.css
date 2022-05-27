@@ -4,7 +4,7 @@
 }
 
 .maxWidthWrapper {
-  max-width: 1024px;
+    position: relative;
 }
 
 .header {
@@ -26,13 +26,47 @@
 }
 
 .characterWrapper {
-  position: fixed;
-  top: 15%;
-  left: 60%;
-  bottom: 5%;
-  min-height: 500px;
+    position: fixed;
+    top: 15%;
+    left: 60%;
+    bottom: 5%;
+    min-height: 500px;
 }
 
 .controlColumn {
     width: 50%;
+}
+
+@media (max-width: 617px) {
+    .characterEditor {
+        padding-top: 28px;
+        padding-bottom: 64px;
+        overflow: hidden;
+    }
+
+    .header {
+        width: 100%;
+        font-size: 12px;
+    }
+    .maxWidthWrapper {
+        width:600px;
+    }
+    .controlColumn {
+        display: flex;
+        position: relative;
+        width:100%;
+        left:0;
+        z-index: 100;
+        overflow: scroll;
+        margin-left: -28px;
+        margin-right: auto;
+        margin-top: 20vh;;
+    }
+
+    .characterWrapper {
+        top: 15%;
+        left: 20%;
+        bottom: 5%;
+        min-height: 300px;
+    }
 }

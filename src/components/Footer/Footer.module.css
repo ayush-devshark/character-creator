@@ -10,3 +10,9 @@
   color: inherit;
 }
 
+
+@media (max-width: 612px){
+  .footer {
+    display: none;
+  }
+}
